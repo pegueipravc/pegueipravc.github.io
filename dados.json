@@ -1,5 +1,45 @@
 [
  {
+  "cod": "013",
+  "tema": "Luminárias",
+  "nicho": "Casa",
+  "data": "2026-10-12T19:00:00-03:00",
+  "palavra": "QUERO",
+  "capa": "img/013-capa.webp",
+  "itens": [
+   {
+    "nome": "Abajur diva",
+    "link": "https://s.shopee.com.br/9KiVexoYBI",
+    "img": "img/013-1.webp"
+   },
+   {
+    "nome": "Luminária laranja retrô",
+    "link": "https://s.shopee.com.br/9V1vrGnuqL",
+    "img": "img/013-2.webp"
+   },
+   {
+    "nome": "Globo de cristal",
+    "link": "https://s.shopee.com.br/9fLM3ZnHVO",
+    "img": "img/013-3.webp"
+   },
+   {
+    "nome": "Cogumelo de madeira",
+    "link": "https://s.shopee.com.br/9pemFsmeAR",
+    "img": "img/013-4.webp"
+   },
+   {
+    "nome": "Lumi lux dourado",
+    "link": "https://s.shopee.com.br/8fSorjr5XE",
+    "img": "img/013-5.webp"
+   },
+   {
+    "nome": "Abajur touch sem fio",
+    "link": "https://s.shopee.com.br/30oS7LCBjU",
+    "img": "img/013-6.webp"
+   }
+  ]
+ },
+ {
   "cod": "012",
   "tema": "Decoração divertida",
   "nicho": "Casa",
