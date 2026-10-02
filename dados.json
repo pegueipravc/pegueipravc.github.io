@@ -1,5 +1,45 @@
 [
  {
+  "cod": "014",
+  "tema": "Gatos",
+  "nicho": "Pets",
+  "data": "2026-10-13T19:00:00-03:00",
+  "palavra": "QUERO",
+  "capa": "img/014-capa.webp",
+  "itens": [
+   {
+    "nome": "Cama aconchego",
+    "link": "https://s.shopee.com.br/4VdFv9FQ1g",
+    "img": "img/014-1.webp"
+   },
+   {
+    "nome": "Comedouros de cerâmica",
+    "link": "https://s.shopee.com.br/4LJpiqG3Mf",
+    "img": "img/014-2.webp"
+   },
+   {
+    "nome": "Fonte de cerâmica",
+    "link": "https://s.shopee.com.br/4B0PWXGghe",
+    "img": "img/014-3.webp"
+   },
+   {
+    "nome": "Arranhador curvo",
+    "link": "https://s.shopee.com.br/40gzKEHK2d",
+    "img": "img/014-4.webp"
+   },
+   {
+    "nome": "Rede de janela",
+    "link": "https://s.shopee.com.br/5AswiNCsfs",
+    "img": "img/014-5.webp"
+   },
+   {
+    "nome": "Caminha lavável",
+    "link": "https://s.shopee.com.br/9V1vsLrmsp",
+    "img": "img/014-6.webp"
+   }
+  ]
+ },
+ {
   "cod": "013",
   "tema": "Luminárias",
   "nicho": "Casa",
@@ -403,7 +443,7 @@
   "cod": "002",
   "tema": "Setup gamer",
   "nicho": "Gamer",
-  "data": "2026-10-02T19:00:00-03:00",
+  "data": "2026-10-02T13:00:00-03:00",
   "palavra": "SETUP",
   "capa": "img/002-capa.webp",
   "itens": [
