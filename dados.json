@@ -1,5 +1,45 @@
 [
  {
+  "cod": "011",
+  "tema": "Pokémon",
+  "nicho": "Presentes",
+  "data": "2026-10-04T15:00:00-03:00",
+  "palavra": "PIKACHU",
+  "capa": "img/011-capa.webp",
+  "itens": [
+   {
+    "nome": "Pelúcias Pokémon",
+    "link": "https://s.shopee.com.br/3qNYGjz7xS",
+    "img": "img/011-1.webp"
+   },
+   {
+    "nome": "Pokébola que abre",
+    "link": "https://s.shopee.com.br/3g484QzlIR",
+    "img": "img/011-2.webp"
+   },
+   {
+    "nome": "Tênis Pikachu",
+    "link": "https://s.shopee.com.br/2qV14u2vzI",
+    "img": "img/011-3.webp"
+   },
+   {
+    "nome": "Pantufas Pikachu",
+    "link": "https://s.shopee.com.br/2gBasb3ZKH",
+    "img": "img/011-4.webp"
+   },
+   {
+    "nome": "Mochila Pokémon",
+    "link": "https://s.shopee.com.br/3B7rTW1fJO",
+    "img": "img/011-5.webp"
+   },
+   {
+    "nome": "Pikachu + Pokébola",
+    "link": "https://s.shopee.com.br/4LJorfsLq5",
+    "img": "img/011-6.webp"
+   }
+  ]
+ },
+ {
   "cod": "010",
   "tema": "Harry Potter",
   "nicho": "Geek",
