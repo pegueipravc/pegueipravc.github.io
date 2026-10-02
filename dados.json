@@ -1,5 +1,45 @@
 [
  {
+  "cod": "012",
+  "tema": "Decoração divertida",
+  "nicho": "Casa",
+  "data": "2026-10-11T19:00:00-03:00",
+  "palavra": "AMEI",
+  "capa": "img/012-capa.webp",
+  "itens": [
+   {
+    "nome": "Peso de porta de salsicha",
+    "link": "https://s.shopee.com.br/7Ae10SZa8w",
+    "img": "img/012-1.webp"
+   },
+   {
+    "nome": "Porta-copos de disco de vinil",
+    "link": "https://s.shopee.com.br/70Kao9aDTv",
+    "img": "img/012-2.webp"
+   },
+   {
+    "nome": "Saleiro e pimenteiro porquinho",
+    "link": "https://s.shopee.com.br/7VGrP4YJT2",
+    "img": "img/012-3.webp"
+   },
+   {
+    "nome": "Capacho do Flork",
+    "link": "https://s.shopee.com.br/7KxRClYwo1",
+    "img": "img/012-4.webp"
+   },
+   {
+    "nome": "Porta-trecos de urso",
+    "link": "https://s.shopee.com.br/7pthngX2n8",
+    "img": "img/012-5.webp"
+   },
+   {
+    "nome": "Porta-papel higiênico ovelha",
+    "link": "https://s.shopee.com.br/40gzEel5yV",
+    "img": "img/012-6.webp"
+   }
+  ]
+ },
+ {
   "cod": "011",
   "tema": "Harry Potter",
   "nicho": "Geek",
