@@ -165,7 +165,7 @@ fetch('dados.json', {cache: 'no-cache'}).then(r => r.json()).then(d => {
   posts = d.filter(p => new Date(p.data) <= agora);   // post agendado só aparece depois que sai
   chips(); render();
   const h = location.hash.replace('#', '').padStart(3, '0');
-  if (location.hash) abrir(h, false);                 // link direto: .../achadinhos/#003
+  if (location.hash) abrir(h, false);                 // link direto: .../#003
 }).catch(() => { $('#vazio').hidden = false; $('#vazio').textContent = 'Não carregou. Atualiza a página 🙏'; });
 </script>
 </body>
