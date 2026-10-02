@@ -1,311 +1,311 @@
 [
  {
   "cod": "011",
-  "tema": "Pokémon",
-  "nicho": "Presentes",
-  "data": "2026-10-04T15:00:00-03:00",
-  "palavra": "PIKACHU",
+  "tema": "Harry Potter",
+  "nicho": "Geek",
+  "data": "2026-10-10T19:00:00-03:00",
+  "palavra": "MAGIA",
   "capa": "img/011-capa.webp",
   "itens": [
    {
-    "nome": "Capa de puff gigante Snorlax",
-    "link": "https://s.shopee.com.br/4B0OjJ05Ir",
+    "nome": "Luminária Hogwarts",
+    "link": "https://s.shopee.com.br/1VzdZLQTQH",
     "img": "img/011-1.webp"
    },
    {
-    "nome": "Pokébola interativa",
-    "link": "https://s.shopee.com.br/4LJovbzRxu",
+    "nome": "Caneca Chapéu Seletor",
+    "link": "https://s.shopee.com.br/1gJ3lePq5K",
     "img": "img/011-2.webp"
    },
    {
-    "nome": "Almofada pelúcia Gengar",
-    "link": "https://s.shopee.com.br/4VdF7uyocx",
+    "nome": "Velas flutuantes",
+    "link": "https://s.shopee.com.br/1qcTxxPCkN",
     "img": "img/011-3.webp"
    },
    {
-    "nome": "Copo temático com canudo",
-    "link": "https://s.shopee.com.br/3LRHjm3Fzk",
+    "nome": "Almofadas Hogwarts",
+    "link": "https://s.shopee.com.br/20vuAGOZPQ",
     "img": "img/011-4.webp"
-   },
-   {
-    "nome": "Luminária Pokébola",
-    "link": "https://s.shopee.com.br/3Vkhw52cen",
-    "img": "img/011-5.webp"
-   },
-   {
-    "nome": "Bolsa transversal Pokémons",
-    "link": "https://s.shopee.com.br/5q8ciNtKrY",
-    "img": "img/011-6.webp"
-   },
-   {
-    "nome": "Pijamas Pokémons",
-    "link": "https://s.shopee.com.br/5fpCW4tyCX",
-    "img": "img/011-7.webp"
-   },
-   {
-    "nome": "Kit de canetas",
-    "link": "https://s.shopee.com.br/5VVmJlubXW",
-    "img": "img/011-8.webp"
-   },
-   {
-    "nome": "Tênis Pikachu",
-    "link": "https://s.shopee.com.br/5LCM7SvEsV",
-    "img": "img/011-9.webp"
-   },
-   {
-    "nome": "Pantufas fofas Pikachu",
-    "link": "https://s.shopee.com.br/6VOJVbqnVk",
-    "img": "img/011-10.webp"
-   },
-   {
-    "nome": "Trio de pelúcias",
-    "link": "https://s.shopee.com.br/1BMn9p6EGa",
-    "img": "img/011-11.webp"
-   },
-   {
-    "nome": "Coleção de cerâmicas",
-    "link": "https://s.shopee.com.br/113MxW6rbZ",
-    "img": "img/011-12.webp"
    }
   ]
  },
  {
   "cod": "010",
-  "tema": "Harry Potter",
-  "nicho": "Geek",
-  "data": "2026-10-10T19:00:00-03:00",
-  "palavra": "MAGIA",
+  "tema": "Quarto gamer",
+  "nicho": "Gamer",
+  "data": "2026-10-09T19:00:00-03:00",
+  "palavra": "GAMER",
   "capa": "img/010-capa.webp",
   "itens": [
    {
-    "nome": "Luminária Hogwarts",
-    "link": "https://s.shopee.com.br/5Asv7vEs9s",
+    "nome": "Papel de parede GTA",
+    "link": "https://s.shopee.com.br/2BFKMYOPNY",
     "img": "img/010-1.webp"
    },
    {
-    "nome": "Caneca Chapéu Seletor",
-    "link": "https://s.shopee.com.br/50ZUvcFVUr",
+    "nome": "Fita neon LED",
+    "link": "https://s.shopee.com.br/20vuAFP2iX",
     "img": "img/010-2.webp"
    },
    {
-    "nome": "Velas flutuantes",
-    "link": "https://s.shopee.com.br/4qG4jJG8pq",
+    "nome": "Suporte de parede PS5",
+    "link": "https://s.shopee.com.br/2VsAlAN8he",
     "img": "img/010-3.webp"
    },
    {
-    "nome": "Almofadas Hogwarts",
-    "link": "https://s.shopee.com.br/4fweX0GmAp",
+    "nome": "Mousepad gigante",
+    "link": "https://s.shopee.com.br/2LYkYrNm2d",
     "img": "img/010-4.webp"
    }
   ]
  },
  {
   "cod": "009",
-  "tema": "Quarto gamer",
-  "nicho": "Gamer",
-  "data": "2026-10-09T19:00:00-03:00",
-  "palavra": "GAMER",
+  "tema": "Gengar",
+  "nicho": "Geek",
+  "data": "2026-10-08T19:00:00-03:00",
+  "palavra": "GENGAR",
   "capa": "img/009-capa.webp",
   "itens": [
    {
-    "nome": "Papel de parede GTA",
-    "link": "https://s.shopee.com.br/4fweWzURmf",
+    "nome": "Suporte de controle",
+    "link": "https://s.shopee.com.br/6L4rN89Zew",
     "img": "img/009-1.webp"
    },
    {
-    "nome": "Fita neon LED",
-    "link": "https://s.shopee.com.br/5Asv7uSXlm",
+    "nome": "Luminária Gengar",
+    "link": "https://s.shopee.com.br/LneE7VwX9",
     "img": "img/009-2.webp"
    },
    {
-    "nome": "Suporte de parede PS5",
-    "link": "https://s.shopee.com.br/50ZUvbTB6l",
+    "nome": "Porta-lápis Gengar",
+    "link": "https://s.shopee.com.br/9KiSwdy9ZY",
     "img": "img/009-3.webp"
    },
    {
-    "nome": "Mousepad gigante",
-    "link": "https://s.shopee.com.br/2qV0LcbQVM",
+    "nome": "Caneca Gengar",
+    "link": "https://s.shopee.com.br/W74QQVJCA",
     "img": "img/009-4.webp"
    }
   ]
  },
  {
   "cod": "008",
-  "tema": "Gengar",
+  "tema": "Star Wars",
   "nicho": "Geek",
-  "data": "2026-10-08T19:00:00-03:00",
-  "palavra": "GENGAR",
+  "data": "2026-10-07T19:00:00-03:00",
+  "palavra": "YODA",
   "capa": "img/008-capa.webp",
   "itens": [
    {
-    "nome": "Suporte de controle",
-    "link": "https://s.shopee.com.br/6L4rN89Zew",
+    "nome": "Caneca Grogu",
+    "link": "https://s.shopee.com.br/905eV4lrif",
     "img": "img/008-1.webp"
    },
    {
-    "nome": "Luminária Gengar",
-    "link": "https://s.shopee.com.br/LneE7VwX9",
+    "nome": "Boneco Baby Yoda",
+    "link": "https://s.shopee.com.br/8pmEIlmV3e",
     "img": "img/008-2.webp"
    },
    {
-    "nome": "Porta-lápis Gengar",
-    "link": "https://s.shopee.com.br/9KiSwdy9ZY",
+    "nome": "Luminária Darth Vader",
+    "link": "https://s.shopee.com.br/8fSo6Sn8Od",
     "img": "img/008-3.webp"
    },
    {
-    "nome": "Caneca Gengar",
-    "link": "https://s.shopee.com.br/W74QQVJCA",
+    "nome": "Garrafa Star Wars",
+    "link": "https://s.shopee.com.br/7Ae0JhsqRM",
     "img": "img/008-4.webp"
    }
   ]
  },
  {
   "cod": "007",
-  "tema": "Star Wars",
-  "nicho": "Geek",
-  "data": "2026-10-07T19:00:00-03:00",
-  "palavra": "YODA",
+  "tema": "Pequeno gamer",
+  "nicho": "Gamer",
+  "data": "2026-10-06T19:00:00-03:00",
+  "palavra": "PLAYER",
   "capa": "img/007-capa.webp",
   "itens": [
    {
-    "nome": "Caneca Grogu",
-    "link": "https://s.shopee.com.br/1Vzcl9pda8",
+    "nome": "Kit bonecos Sonic",
+    "link": "https://s.shopee.com.br/4LJowT8loc",
     "img": "img/007-1.webp"
    },
    {
-    "nome": "Boneco Baby Yoda",
-    "link": "https://s.shopee.com.br/1LgCYqqGv7",
+    "nome": "Espada Minecraft",
+    "link": "https://s.shopee.com.br/4VdF8m88Tf",
     "img": "img/007-2.webp"
    },
    {
-    "nome": "Luminária Darth Vader",
-    "link": "https://s.shopee.com.br/1qcT9loMuE",
+    "nome": "Pelúcias Mario e Luigi",
+    "link": "https://s.shopee.com.br/gQWZjMjFw",
     "img": "img/007-3.webp"
    },
    {
-    "nome": "Garrafa Star Wars",
-    "link": "https://s.shopee.com.br/1gJ2xSp0FD",
+    "nome": "Carrinho do Sonic",
+    "link": "https://s.shopee.com.br/qjwm2M5uz",
     "img": "img/007-4.webp"
+   },
+   {
+    "nome": "Pop it gamer",
+    "link": "https://s.shopee.com.br/113MyLLSa2",
+    "img": "img/007-5.webp"
+   },
+   {
+    "nome": "Luminária controle gamer",
+    "link": "https://s.shopee.com.br/7VGqiIwJKD",
+    "img": "img/007-6.webp"
    }
   ]
  },
  {
   "cod": "006",
-  "tema": "Pequeno gamer",
-  "nicho": "Gamer",
-  "data": "2026-10-06T19:00:00-03:00",
-  "palavra": "PLAYER",
+  "tema": "Homem-Aranha",
+  "nicho": "Presentes",
+  "data": "2026-10-05T19:00:00-03:00",
+  "palavra": "ARANHA",
   "capa": "img/006-capa.webp",
   "itens": [
    {
-    "nome": "Kit bonecos Sonic",
-    "link": "https://s.shopee.com.br/gQWH5jSVb",
+    "nome": "Luva lança-teia + máscara",
+    "link": "https://s.shopee.com.br/1ApmTUTSd",
     "img": "img/006-1.webp"
    },
    {
-    "nome": "Espada Minecraft",
-    "link": "https://s.shopee.com.br/9pelBwAYuO",
+    "nome": "Lançador de teia de pulso",
+    "link": "https://s.shopee.com.br/1BMnAcQ25s",
     "img": "img/006-2.webp"
    },
    {
-    "nome": "Pelúcias Mario e Luigi",
-    "link": "https://s.shopee.com.br/9fLKzdBCFN",
+    "nome": "Boneco + luva de dardos",
+    "link": "https://s.shopee.com.br/113MyJQfQr",
     "img": "img/006-3.webp"
    },
    {
-    "nome": "Carrinho do Sonic",
-    "link": "https://s.shopee.com.br/9V1unKBpaM",
+    "nome": "Homem-Aranha dançarino",
+    "link": "https://s.shopee.com.br/qjwm0RIlq",
     "img": "img/006-4.webp"
    },
    {
-    "nome": "Pop it gamer",
-    "link": "https://s.shopee.com.br/9KiUb1CSvL",
+    "nome": "Blocos de montar",
+    "link": "https://s.shopee.com.br/gQWZhRw6p",
     "img": "img/006-5.webp"
    },
    {
-    "nome": "Luminária controle gamer",
-    "link": "https://s.shopee.com.br/AUuRzB3DjN",
+    "nome": "Boneco articulado",
+    "link": "https://s.shopee.com.br/4LJowSDZce",
     "img": "img/006-6.webp"
    }
   ]
  },
  {
   "cod": "005",
-  "tema": "Homem-Aranha",
+  "tema": "Dia das Crianças",
   "nicho": "Presentes",
-  "data": "2026-10-05T19:00:00-03:00",
-  "palavra": "ARANHA",
+  "data": "2026-10-04T19:00:00-03:00",
+  "palavra": "CRIANÇA",
   "capa": "img/005-capa.webp",
   "itens": [
    {
-    "nome": "Luva lança-teia + máscara",
-    "link": "https://s.shopee.com.br/LnfsRyjZ4",
+    "nome": "Mini game 400 jogos",
+    "link": "https://s.shopee.com.br/8fSo6N2l0a",
     "img": "img/005-1.webp"
    },
    {
-    "nome": "Lançador de teia de pulso",
-    "link": "https://s.shopee.com.br/W764ky6E7",
+    "nome": "Carrinho de drift",
+    "link": "https://s.shopee.com.br/8pmEIg27fd",
     "img": "img/005-2.webp"
    },
    {
-    "nome": "Boneco + luva de dardos",
-    "link": "https://s.shopee.com.br/gQWH3xStA",
+    "nome": "Mini câmera infantil",
+    "link": "https://s.shopee.com.br/905eUz1UKg",
     "img": "img/005-3.webp"
    },
    {
-    "nome": "Homem-Aranha dançarino",
-    "link": "https://s.shopee.com.br/qjwTMwpYD",
+    "nome": "Walkie-talkie com vídeo",
+    "link": "https://s.shopee.com.br/9AP4hI0qzj",
     "img": "img/005-4.webp"
    },
    {
-    "nome": "Blocos de montar",
-    "link": "https://s.shopee.com.br/113MffwCDG",
+    "nome": "Cão robô",
+    "link": "https://s.shopee.com.br/80D7J95IMW",
     "img": "img/005-5.webp"
    },
    {
-    "nome": "Boneco articulado",
-    "link": "https://s.shopee.com.br/5VVm1xVvpz",
+    "nome": "Pelúcia Sonic",
+    "link": "https://s.shopee.com.br/9AP4hIw3BH",
     "img": "img/005-6.webp"
    }
   ]
  },
  {
   "cod": "004",
-  "tema": "Dia das Crianças",
+  "tema": "Pokémon",
   "nicho": "Presentes",
-  "data": "2026-10-04T19:00:00-03:00",
-  "palavra": "CRIANÇA",
+  "data": "2026-10-04T15:00:00-03:00",
+  "palavra": "PIKACHU",
   "capa": "img/004-capa.webp",
   "itens": [
    {
-    "nome": "Mini game 400 jogos",
-    "link": "https://s.shopee.com.br/8fSnnj7kaE",
+    "nome": "Capa de puff gigante Snorlax",
+    "link": "https://s.shopee.com.br/5AsvvtLclU",
     "img": "img/004-1.webp"
    },
    {
-    "nome": "Carrinho de drift",
-    "link": "https://s.shopee.com.br/8pmE0277FH",
+    "nome": "Pokébola interativa",
+    "link": "https://s.shopee.com.br/50ZVjaMG6T",
     "img": "img/004-2.webp"
    },
    {
-    "nome": "Mini câmera infantil",
-    "link": "https://s.shopee.com.br/9fLKzZ3wYS",
+    "nome": "Almofada pelúcia Gengar",
+    "link": "https://s.shopee.com.br/4qG5XHMtRS",
     "img": "img/004-3.webp"
    },
    {
-    "nome": "Walkie-talkie com vídeo",
-    "link": "https://s.shopee.com.br/9pelBs3JDV",
+    "nome": "Copo temático com canudo",
+    "link": "https://s.shopee.com.br/4fwfKyNWmR",
     "img": "img/004-4.webp"
    },
    {
-    "nome": "Cão robô",
-    "link": "https://s.shopee.com.br/9KiUax5DEQ",
+    "nome": "Luminária Pokébola",
+    "link": "https://s.shopee.com.br/4VdF8fOA7Q",
     "img": "img/004-5.webp"
    },
    {
-    "nome": "Pelúcia Sonic",
-    "link": "https://s.shopee.com.br/AKb1mnwX6C",
+    "nome": "Bolsa transversal Pokémons",
+    "link": "https://s.shopee.com.br/7faGuV7N84",
     "img": "img/004-6.webp"
+   },
+   {
+    "nome": "Pijamas Pokémons",
+    "link": "https://s.shopee.com.br/7pth6o6jn7",
+    "img": "img/004-7.webp"
+   },
+   {
+    "nome": "Kit de canetas",
+    "link": "https://s.shopee.com.br/7KxQVt8do2",
+    "img": "img/004-8.webp"
+   },
+   {
+    "nome": "Tênis Pikachu",
+    "link": "https://s.shopee.com.br/7VGqiC80T5",
+    "img": "img/004-9.webp"
+   },
+   {
+    "nome": "Pantufas fofas Pikachu",
+    "link": "https://s.shopee.com.br/70Ka7H9uU0",
+    "img": "img/004-10.webp"
+   },
+   {
+    "nome": "Trio de pelúcias",
+    "link": "https://s.shopee.com.br/70Ka7I9RAp",
+    "img": "img/004-11.webp"
+   },
+   {
+    "nome": "Coleção de cerâmicas",
+    "link": "https://s.shopee.com.br/7VGqiD7X9w",
+    "img": "img/004-12.webp"
    }
   ]
  },
