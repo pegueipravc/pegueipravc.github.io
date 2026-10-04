@@ -1,5 +1,55 @@
 [
  {
+  "cod": "015",
+  "tema": "Cachorros",
+  "nicho": "Pets",
+  "data": "2026-10-14T19:00:00-03:00",
+  "palavra": "PET",
+  "capa": "img/015-capa.webp",
+  "itens": [
+   {
+    "nome": "Rampa escada pet",
+    "link": "https://s.shopee.com.br/2BFOILPPel",
+    "img": "img/015-1.webp"
+   },
+   {
+    "nome": "Copo lava-patas",
+    "link": "https://s.shopee.com.br/1gJ7hQRJfg",
+    "img": "img/015-2.webp"
+   },
+   {
+    "nome": "Comedouro elevado",
+    "link": "https://s.shopee.com.br/1qcXtjQgKj",
+    "img": "img/015-3.webp"
+   },
+   {
+    "nome": "Coleira retrátil",
+    "link": "https://s.shopee.com.br/1LgHIoSaLe",
+    "img": "img/015-4.webp"
+   },
+   {
+    "nome": "Colete salva-vidas",
+    "link": "https://s.shopee.com.br/1VzhV7Rx0h",
+    "img": "img/015-5.webp"
+   },
+   {
+    "nome": "Cadeirinha de carro",
+    "link": "https://s.shopee.com.br/4VdJ4eBnNd",
+    "img": "img/015-6.webp"
+   },
+   {
+    "nome": "Petisqueira de ventosa",
+    "link": "https://s.shopee.com.br/40h2TjDhOY",
+    "img": "img/015-7.webp"
+   },
+   {
+    "nome": "Caixa lixa-unhas",
+    "link": "https://s.shopee.com.br/4B0Sg2D43b",
+    "img": "img/015-8.webp"
+   }
+  ]
+ },
+ {
   "cod": "014",
   "tema": "Gatos",
   "nicho": "Pets",
