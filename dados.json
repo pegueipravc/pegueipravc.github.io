@@ -1,5 +1,55 @@
 [
  {
+  "cod": "016",
+  "tema": "Cozinha",
+  "nicho": "Cozinha",
+  "data": "2026-10-15T19:00:00-03:00",
+  "palavra": "COZINHA",
+  "capa": "img/016-capa.webp",
+  "itens": [
+   {
+    "nome": "Forma fundo removível",
+    "link": "https://s.shopee.com.br/8fSs4Zj2iJ",
+    "img": "img/016-1.webp"
+   },
+   {
+    "nome": "Potes herméticos",
+    "link": "https://s.shopee.com.br/8V9RsGjg3I",
+    "img": "img/016-2.webp"
+   },
+   {
+    "nome": "Tampa anti-respingo",
+    "link": "https://s.shopee.com.br/8Kq1fxkJOH",
+    "img": "img/016-3.webp"
+   },
+   {
+    "nome": "Suporte papel toalha",
+    "link": "https://s.shopee.com.br/8AWbTekwjG",
+    "img": "img/016-4.webp"
+   },
+   {
+    "nome": "Fatiador de carne",
+    "link": "https://s.shopee.com.br/80DBHLla4F",
+    "img": "img/016-5.webp"
+   },
+   {
+    "nome": "Sanduicheira grill",
+    "link": "https://s.shopee.com.br/6fhnguqFh4",
+    "img": "img/016-6.webp"
+   },
+   {
+    "nome": "Liquidificador portátil",
+    "link": "https://s.shopee.com.br/6q1DtDpcM7",
+    "img": "img/016-7.webp"
+   },
+   {
+    "nome": "Porta-pão de bambu",
+    "link": "https://s.shopee.com.br/7faKskmRfI",
+    "img": "img/016-8.webp"
+   }
+  ]
+ },
+ {
   "cod": "015",
   "tema": "Cachorros",
   "nicho": "Pets",
