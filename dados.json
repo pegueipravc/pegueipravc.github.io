@@ -1,5 +1,105 @@
 [
  {
+  "cod": "018",
+  "tema": "Dieta",
+  "nicho": "Fitness",
+  "data": "2026-10-17T19:00:00-03:00",
+  "palavra": "DIETA",
+  "capa": "img/018-capa.webp",
+  "itens": [
+   {
+    "nome": "Modelador de hambúrguer",
+    "link": "https://s.shopee.com.br/5LCQ8tZrQJ",
+    "img": "img/018-1.webp"
+   },
+   {
+    "nome": "Pote de salada com molho",
+    "link": "https://s.shopee.com.br/6VONX2VQ3Y",
+    "img": "img/018-2.webp"
+   },
+   {
+    "nome": "Desfiador de frango",
+    "link": "https://s.shopee.com.br/6L4xKjW3OX",
+    "img": "img/018-3.webp"
+   },
+   {
+    "nome": "Centrífuga de salada",
+    "link": "https://s.shopee.com.br/6AlX8QWgjW",
+    "img": "img/018-4.webp"
+   },
+   {
+    "nome": "Cortador de legumes 16 em 1",
+    "link": "https://s.shopee.com.br/60S6w7XK4V",
+    "img": "img/018-5.webp"
+   },
+   {
+    "nome": "Cozedor de ovos elétrico",
+    "link": "https://s.shopee.com.br/905iVeLQhF",
+    "img": "img/018-6.webp"
+   },
+   {
+    "nome": "Fatiador de ovo e banana",
+    "link": "https://s.shopee.com.br/8pmIJLM42E",
+    "img": "img/018-7.webp"
+   },
+   {
+    "nome": "Potes overnight com colher",
+    "link": "https://s.shopee.com.br/8fSs72MhND",
+    "img": "img/018-8.webp"
+   }
+  ]
+ },
+ {
+  "cod": "017",
+  "tema": "Snoopy",
+  "nicho": "Geek",
+  "data": "2026-10-16T19:00:00-03:00",
+  "palavra": "SNOOPY",
+  "capa": "img/017-capa.webp",
+  "itens": [
+   {
+    "nome": "Caneca com tampa",
+    "link": "https://s.shopee.com.br/1AtpPt3Sy",
+    "img": "img/017-1.webp"
+   },
+   {
+    "nome": "Copo térmico 900 ml",
+    "link": "https://s.shopee.com.br/BUK1isQ81",
+    "img": "img/017-2.webp"
+   },
+   {
+    "nome": "Suporte de Alexa",
+    "link": "https://s.shopee.com.br/LnkE1rmn4",
+    "img": "img/017-3.webp"
+   },
+   {
+    "nome": "Kit 4 canecas empilháveis",
+    "link": "https://s.shopee.com.br/W7AQKr9S7",
+    "img": "img/017-4.webp"
+   },
+   {
+    "nome": "Capacho",
+    "link": "https://s.shopee.com.br/gQacdqW7A",
+    "img": "img/017-5.webp"
+   },
+   {
+    "nome": "Ecobag",
+    "link": "https://s.shopee.com.br/6q1DxzSdXk",
+    "img": "img/017-6.webp"
+   },
+   {
+    "nome": "Marca-páginas magnético",
+    "link": "https://s.shopee.com.br/6fhnlgTGsj",
+    "img": "img/017-7.webp"
+   },
+   {
+    "nome": "Luminária",
+    "link": "https://s.shopee.com.br/7Ae4MbRMrq",
+    "img": "img/017-8.webp"
+   }
+  ]
+ },
+ {
   "cod": "016",
   "tema": "Cozinha",
   "nicho": "Cozinha",
