@@ -1,0 +1,442 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Captação, edição, vídeo com IA e carrosséis agendados para corretores de imóveis em Alphaville."><title>luwihmaker</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Outfit:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+@font-face{font-family:"DxRuiga";font-weight:600;font-style:normal;font-display:swap;src:url(fontes/ruiga-600.woff2) format("woff2")}
+@font-face{font-family:"PPFrama";font-weight:400;font-style:normal;font-display:swap;src:url(fontes/frama-400.woff2) format("woff2")}
+@font-face{font-family:"PPFrama";font-weight:800;font-style:normal;font-display:swap;src:url(fontes/frama-800.woff2) format("woff2")}
+b, strong { font-weight: 800; }
+/* Layout: página preta com seções em cinza e branco. Um prédio sobe andar por andar no hero (time-lapse), e o resto é a proposta em módulos */
+:root {
+  --black: #0a0a0b;
+  --ink: #141416;
+  --graphite: #1e1f22;
+  --steel: #8b8d93;
+  --mist: #e6e6e8;
+  --white: #fafafa;
+  --red: #e0342e;
+  --red-soft: #ff6b63;
+  /* DX Ruiga (titulos) e PP Frama (textos): arquivos atuais sao as versoes gratis, o Luis vai trocar pelos comprados */
+  --f-ruiga: "DxRuiga", "Archivo", "Arial Narrow", Arial, sans-serif;
+  --f-frama: "PPFrama", "Outfit", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--black); color: var(--white); font-family: var(--f-frama); font-size: 17px; line-height: 1.6; font-weight: 400; padding: 0; margin: 0; }
+h1, h2, h3 { font-variant-ligatures: none; font-feature-settings: "calt" 0, "liga" 0; font-family: var(--f-ruiga); font-weight: 600; text-transform: uppercase; line-height: 1; letter-spacing: 0; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(40px, 9vw, 104px); }
+h2 { font-size: clamp(30px, 5.4vw, 60px); }
+h3 { font-size: 22px; }
+p { margin: 0; }
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; }
+.mono { font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--steel); }
+.red { color: var(--red); }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--red); margin-right: 8px; animation: pisca 1.4s steps(2, jump-none) infinite; }
+@keyframes pisca { 50% { opacity: .2; } }
+.btn { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--black); text-decoration: none; font-family: var(--f-ruiga); font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 0.04em; padding: 15px 22px; border: 2px solid var(--white); transition: background .15s, color .15s, transform .15s; cursor: pointer; }
+.btn:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+.btn.vazado { background: transparent; color: var(--white); }
+.btn.vazado:hover { background: var(--white); color: var(--black); border-color: var(--white); }
+:focus-visible { outline: 3px solid var(--red-soft); outline-offset: 3px; }
+
+/* NAV */
+nav { position: sticky; top: 0; z-index: 10; background: var(--black); border-bottom: 1px solid var(--graphite); }
+nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 12px; }
+nav .logo { font-family: var(--f-ruiga); font-weight: 600; text-transform: uppercase; text-decoration: none; letter-spacing: 0.02em; }
+nav .links { display: flex; gap: 22px; align-items: center; }
+nav .links a.t { text-decoration: none; font-size: 14px; color: var(--steel); }
+nav .links a.t:hover { color: var(--white); }
+nav .btn { padding: 10px 16px; font-size: 12px; }
+
+/* HERO */
+.hero { padding-block: 56px 72px; position: relative; overflow: hidden; }
+.hero .grade { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 40px; align-items: end; }
+.hero .esq { display: flex; flex-direction: column; gap: 28px; }
+.hero .sub { max-width: 52ch; font-size: 19px; color: var(--mist); }
+.hero .ctas { display: flex; gap: 12px; flex-wrap: wrap; }
+.quem { display: flex; align-items: center; gap: 14px; }
+.foto { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; border: 2px solid var(--white); flex: none; background: var(--graphite); }
+.foto img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.14); display: block; }
+.quem b { display: block; font-weight: 600; }
+.quem span { color: var(--steel); font-size: 14px; }
+.tela { border: 1px solid var(--graphite); background: var(--ink); padding: 14px; display: flex; flex-direction: column; gap: 12px; }
+.tela .barra { display: flex; justify-content: space-between; gap: 8px; }
+.cena { height: 300px; background: linear-gradient(var(--graphite), var(--ink)); position: relative; display: flex; align-items: flex-end; justify-content: center; overflow: hidden; border: 1px solid var(--graphite); }
+.cena::before { content: ""; position: absolute; inset: auto 0 0 0; height: 14px; background: var(--black); border-top: 2px solid var(--steel); }
+.predio { display: flex; flex-direction: column-reverse; width: 46%; margin-bottom: 14px; gap: 3px; }
+.andar { height: 18px; background: var(--mist); display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; padding: 4px 6px; transform-origin: bottom; transition: transform .35s cubic-bezier(.2, .8, .2, 1), opacity .35s; }
+.andar i { background: var(--ink); }
+.andar:nth-child(3n) i:nth-child(2) { background: var(--red); }
+.andar.off { transform: scaleY(0); opacity: 0; }
+.mira { position: absolute; width: 38px; height: 38px; border: 2px solid var(--red); right: 18px; top: 18px; }
+.mira::after { content: ""; position: absolute; inset: 14px; background: var(--red); }
+
+/* SEÇÕES */
+section { padding-block: 84px; }
+.cab { display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px; max-width: 760px; }
+.cinza { background: var(--mist); color: var(--black); }
+.cinza .mono { color: #595b61; }
+.cinza p { color: #33353a; }
+.faixa { background: var(--graphite); }
+
+.entregas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border: 2px solid var(--black); }
+.ent { padding: 24px 20px 28px; display: flex; flex-direction: column; gap: 12px; border-right: 2px solid var(--black); background: var(--mist); min-width: 0; transition: background .2s, color .2s; }
+.ent:last-child { border-right: 0; }
+.ent:hover { background: var(--black); color: var(--white); }
+.ent:hover p, .ent:hover .mono { color: var(--mist); }
+.ent .n { font-family: var(--f-ruiga); font-weight: 600; font-size: 54px; line-height: 1; color: var(--red); }
+.ent p { font-size: 15.5px; }
+
+.dupla { display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 36px; align-items: start; }
+.retrato { width: 132px; height: 132px; flex: none; border-radius: 50%; overflow: hidden; border: 3px solid var(--white); position: relative; }
+.retrato img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.14); display: block; filter: grayscale(1) contrast(1.05); }
+.retrato::after { content: ""; position: absolute; inset: 0; background: linear-gradient(transparent 60%, color-mix(in srgb, var(--red) 28%, transparent)); mix-blend-mode: multiply; }
+.texto { display: flex; flex-direction: column; gap: 20px; }
+.numeros { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.numeros div { border-top: 2px solid var(--white); padding-top: 10px; }
+.numeros b { display: block; font-family: var(--f-ruiga); font-weight: 600; font-size: 38px; line-height: 1; }
+.numeros span { font-size: 13px; color: var(--steel); }
+.kit { margin: 0; padding: 0; list-style: none; border-top: 1px solid #3a3b40; }
+.kit li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #3a3b40; font-size: 15px; }
+.kit li span:last-child { color: var(--steel); text-align: right; }
+
+/* MONTE O SEU */
+.monte { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 28px; align-items: start; }
+.linhas { display: flex; flex-direction: column; border: 2px solid var(--black); background: var(--white); }
+.lin { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 14px; align-items: center; padding: 16px; border-bottom: 2px solid var(--black); }
+.lin:last-child { border-bottom: 0; }
+.lin b { font-family: var(--f-ruiga); text-transform: uppercase; font-weight: 600; font-size: 15px; }
+.opcoes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.op { font: inherit; font-size: 13px; line-height: 1.25; text-align: left; padding: 9px 10px; background: var(--white); color: var(--black); border: 2px solid var(--black); cursor: pointer; display: flex; flex-direction: column; min-width: 0; transition: background .12s, color .12s; }
+.op small { font-family: var(--f-mono); font-size: 11px; color: #595b61; }
+.op:hover { background: var(--mist); }
+.op[aria-pressed="true"] { background: var(--black); color: var(--white); }
+.op[aria-pressed="true"] small { color: var(--red-soft); }
+.resumo { position: sticky; top: 84px; background: var(--black); color: var(--white); padding: 22px; display: flex; flex-direction: column; gap: 14px; border: 2px solid var(--black); }
+.resumo .total { font-family: var(--f-ruiga); font-weight: 600; font-size: 54px; line-height: 1; font-variant-numeric: tabular-nums; }
+.resumo ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 14.5px; min-height: 96px; }
+.resumo li { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px solid #2b2c30; padding-bottom: 6px; }
+.resumo li span:last-child { font-variant-numeric: tabular-nums; color: var(--steel); }
+.resumo .dica { font-size: 14px; color: var(--mist); min-height: 44px; }
+.resumo .dica b { color: var(--red-soft); font-weight: 600; }
+.extra { display: flex; gap: 10px; align-items: center; font-size: 14px; padding: 12px 16px; border: 2px solid var(--black); border-top: 0; background: var(--white); }
+.extra input { width: 18px; height: 18px; accent-color: var(--red); }
+
+/* PLANOS */
+.planos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+.plano { border: 2px solid var(--steel); padding: 26px 22px; display: flex; flex-direction: column; gap: 16px; background: var(--ink); min-width: 0; transition: border-color .15s; }
+.plano:hover { border-color: var(--white); }
+.plano.top { background: var(--white); color: var(--black); border-color: var(--white); }
+.plano.top .mono { color: #595b61; }
+.plano .preco { font-family: var(--f-ruiga); font-weight: 600; font-size: 46px; line-height: 1; font-variant-numeric: tabular-nums; }
+.plano .preco small { font-family: var(--f-frama); font-size: 15px; font-weight: 500; }
+.plano ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.plano li { border-top: 1px solid color-mix(in srgb, currentColor 22%, transparent); padding-top: 10px; display: flex; flex-direction: column; }
+.plano li span { font-size: 13.5px; color: var(--steel); }
+.plano.top li span { color: #595b61; }
+.selo { align-self: flex-start; background: var(--red); color: var(--white); font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 9px; }
+.chave { display: inline-flex; border: 2px solid var(--white); width: fit-content; margin-bottom: 28px; }
+.chave button { font: inherit; font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 10px 16px; background: transparent; color: var(--white); border: 0; cursor: pointer; }
+.chave button[aria-pressed="true"] { background: var(--white); color: var(--black); }
+.nota { font-size: 14px; color: var(--steel); }
+
+/* PASSOS + FAQ */
+.passos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; counter-reset: p; }
+.passo { padding: 24px 24px 24px 0; border-top: 3px solid var(--black); display: flex; flex-direction: column; gap: 10px; }
+.passo .mono { color: var(--red); }
+.faq { max-width: 820px; border-top: 1px solid #3a3b40; }
+details { border-bottom: 1px solid #3a3b40; padding: 18px 0; }
+summary { cursor: pointer; font-family: var(--f-ruiga); font-weight: 600; text-transform: uppercase; font-size: 17px; list-style: none; display: flex; justify-content: space-between; gap: 14px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--red); font-size: 24px; line-height: 1; }
+details[open] summary::after { content: "–"; }
+details p { margin-top: 10px; color: var(--mist); max-width: 62ch; }
+.final { text-align: left; }
+.final h2 { max-width: 14ch; }
+.final .ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+footer { border-top: 1px solid var(--graphite); padding-block: 24px 40px; }
+footer .wrap { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+
+@keyframes sobe { from { opacity: 0; } to { opacity: 1; } }
+.hero .esq > * { animation: sobe .5s both; }
+.hero .esq > *:nth-child(2) { animation-delay: .08s; } .hero .esq > *:nth-child(3) { animation-delay: .16s; } .hero .esq > *:nth-child(4) { animation-delay: .24s; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+@media (max-width: 860px) {
+  .hero .grade, .monte { grid-template-columns: minmax(0, 1fr); }
+  .dupla { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .entregas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ent:nth-child(2) { border-right: 0; } .ent:nth-child(-n+2) { border-bottom: 2px solid var(--black); }
+  .planos, .passos { grid-template-columns: minmax(0, 1fr); }
+  .passo { padding-right: 0; }
+  .resumo { position: static; }
+  nav .links a.t { display: none; }
+}
+@media (max-width: 560px) {
+  section { padding-block: 60px; }
+  .lin { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .opcoes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .entregas { grid-template-columns: minmax(0, 1fr); }
+  .ent { border-right: 0; border-bottom: 2px solid var(--black); } .ent:last-child { border-bottom: 0; }
+  .numeros b { font-size: 30px; }
+  .cena { height: 240px; }
+}
+</style></head><body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#topo">luwihmaker<span class="red">.</span></a>
+    <div class="links">
+      <a class="t" href="#entregas">Entregas</a><a class="t" href="#monte">Monte o seu</a><a class="t" href="#planos">Planos</a><a class="t" href="#faq">Dúvidas</a>
+      <a class="btn" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Chamar no Instagram</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap grade">
+    <div class="esq">
+      <span class="mono"><span class="dot"></span>Vídeo e conteúdo para corretores · Alphaville, Barueri</span>
+      <h1>Seu imóvel visto <span class="red">antes</span> de existir.</h1>
+      <p class="sub">Captação, edição, vídeo com inteligência artificial e carrosséis agendados. Você vende, eu cuido da imagem.</p>
+      <div class="ctas">
+        <a class="btn" href="#planos">Ver planos</a>
+        <a class="btn vazado" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Falar comigo</a>
+      </div>
+      <div class="quem">
+        <div class="foto"><img alt="Luis, videomaker" src="foto.jpg"></div>
+        <div><b>Luis · videomaker</b><span>4 anos de captação e edição, Alphaville</span></div>
+      </div>
+    </div>
+    <div class="tela" aria-label="Time-lapse de uma obra sendo construída">
+      <div class="barra"><span class="mono"><span class="dot"></span>REC</span><span class="mono" id="tc">00:00:12:00</span></div>
+      <div class="cena"><div class="mira"></div><div class="predio" id="predio"></div></div>
+      <div class="barra"><span class="mono">Time-lapse de obra</span><span class="mono">IA · 00:10 – 00:20</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="cinza" id="entregas">
+  <div class="wrap">
+    <div class="cab"><span class="mono">O que eu entrego</span><h2>Quatro frentes. Um padrão visual.</h2></div>
+    <div class="entregas">
+      <div class="ent"><span class="n">01</span><span class="mono">Captação</span><h3>Visita ao imóvel</h3><p>4K, gravação em log, cor cinematográfica e áudio profissional. Você aparece falando quando fizer sentido.</p></div>
+      <div class="ent"><span class="n">02</span><span class="mono">00:20 – 00:45</span><h3>Edição de vídeos curtos</h3><p>Reels e TikTok na vertical, com corte, cor, trilha, legenda e capa. Pronto para postar.</p></div>
+      <div class="ent"><span class="n">03</span><span class="mono">00:10 – 00:20</span><h3>Vídeo com IA</h3><p>A foto do terreno vira o time-lapse da casa construída. Fachada e ambientes de um lançamento ganham movimento.</p></div>
+      <div class="ent"><span class="n">04</span><span class="mono">Agendado</span><h3>Carrosséis informativos</h3><p>Dicas de compra, financiamento e bairro, com a sua marca, agendados no Instagram.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap dupla">
+    <div class="retrato"><img alt="Luis, videomaker em Alphaville" src="foto.jpg"></div>
+    <div class="texto">
+      <span class="mono">Quem faz</span>
+      <h2>Luis, videomaker aqui do lado.</h2>
+      <p style="color:var(--mist)">São 4 anos trabalhando com captação e edição de vídeo. Hoje uso inteligência artificial de forma criativa dentro do processo para mostrar imóvel de um jeito que foto parada não mostra. Moro em Alphaville, então chegar até você é rápido.</p>
+      <div class="numeros">
+        <div><b>4</b><span>anos de captação e edição</span></div>
+        <div><b>4K</b><span>em log, com LUTs de cinema</span></div>
+        <div><b>5</b><span>dias úteis até a entrega</span></div>
+      </div>
+      <ul class="kit">
+        <li><span>Câmera</span><span>iPhone 15 Pro · app Blackmagic</span></li>
+        <li><span>Áudio</span><span>Hollyland Lark 2</span></li>
+        <li><span>Estabilização</span><span>Tripé Ulanzi</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cinza" id="monte">
+  <div class="wrap">
+    <div class="cab"><span class="mono">Sob medida</span><h2>Monte o seu. Sobe ou desce cada serviço.</h2><p>Escolha o nível de cada frente e veja o valor mensal na hora.</p></div>
+    <div class="monte">
+      <div>
+        <div class="linhas" id="linhas"></div>
+        <label class="extra"><input type="checkbox" id="hd"> IA em 1080p, com mais definição, +R$ 100 por vídeo com IA</label>
+      </div>
+      <aside class="resumo" aria-live="polite">
+        <span class="mono">Seu mês</span>
+        <div class="total" id="total">R$ 0</div>
+        <ul id="itens"><li><span>Nenhum serviço escolhido</span><span></span></li></ul>
+        <p class="dica" id="dica">Escolha ao menos um serviço.</p>
+        <a class="btn" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Pedir esse pacote</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="planos">
+  <div class="wrap">
+    <div class="cab"><span class="mono">Planos mensais</span><h2>Já montado, é só escolher.</h2></div>
+    <div class="chave" role="group" aria-label="Período">
+      <button type="button" id="b-mes" aria-pressed="true">Mensalidade</button>
+      <button type="button" id="b-1" aria-pressed="false">Primeiro mês</button>
+    </div>
+    <div class="planos">
+      <article class="plano">
+        <span class="mono">Essencial</span>
+        <div class="preco"><span data-p="600" data-p1="600">R$ 600</span><small> /mês</small></div>
+        <ul>
+          <li><b>1 visita de captação</b><span>até 1 hora, 1 imóvel</span></li>
+          <li><b>2 vídeos curtos editados</b><span>legenda, trilha e capa</span></li>
+          <li><b>4 carrosséis agendados</b><span>com a sua marca</span></li>
+        </ul>
+        <a class="btn vazado" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Quero este</a>
+      </article>
+      <article class="plano top">
+        <span class="selo">Mais escolhido</span>
+        <span class="mono">Base</span>
+        <div class="preco"><span data-p="1000" data-p1="700">R$ 1.000</span><small> /mês</small></div>
+        <ul>
+          <li><b>1 visita de captação</b><span>até 2 horas</span></li>
+          <li><b>4 vídeos curtos editados</b><span>legenda, trilha e capa</span></li>
+          <li><b>1 vídeo com IA</b><span>time-lapse de obra ou fachada</span></li>
+          <li><b>4 carrosséis agendados</b><span>com a sua marca</span></li>
+        </ul>
+        <p class="nota" style="color:#595b61">Primeiro mês a R$ 700, com contrato de 3 meses.</p>
+        <a class="btn" style="background:var(--black);color:var(--white);border-color:var(--black)" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Quero este</a>
+      </article>
+      <article class="plano">
+        <span class="mono">Plus</span>
+        <div class="preco"><span data-p="1800" data-p1="1800">R$ 1.800</span><small> /mês</small></div>
+        <ul>
+          <li><b>2 visitas de captação</b><span>até 2 horas cada</span></li>
+          <li><b>8 vídeos curtos editados</b><span>legenda, trilha e capa</span></li>
+          <li><b>2 vídeos com IA</b><span>time-lapse de obra ou fachada</span></li>
+          <li><b>8 carrosséis agendados</b><span>com a sua marca</span></li>
+        </ul>
+        <a class="btn vazado" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Quero este</a>
+      </article>
+    </div>
+    <p class="nota" style="margin-top:20px">Avulso, sem contrato: visita extra R$ 250 · vídeo com IA R$ 350 · trend gravada R$ 150 · carrossel R$ 80.</p>
+  </div>
+</section>
+
+<section class="cinza">
+  <div class="wrap">
+    <div class="cab"><span class="mono">Como funciona</span><h2>Do primeiro contato ao primeiro vídeo.</h2></div>
+    <div class="passos">
+      <div class="passo"><span class="mono">Passo 1</span><h3>Conversa</h3><p>15 minutos para entender seus imóveis e escolher o plano.</p></div>
+      <div class="passo"><span class="mono">Passo 2</span><h3>Visita</h3><p>Combinamos o dia e eu gravo o material no imóvel.</p></div>
+      <div class="passo"><span class="mono">Passo 3</span><h3>Entrega</h3><p>Em até 5 dias úteis você recebe os vídeos e os carrosséis ficam agendados.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="cab"><span class="mono">Combinados</span><h2>Antes de fechar.</h2></div>
+    <div class="faq">
+      <details open><summary>O que preciso entregar?</summary><p>Os imóveis, o horário da visita e a aprovação do conteúdo. Para os carrosséis, o logo, as cores e uma foto sua.</p></details>
+      <details><summary>Posso pedir ajustes?</summary><p>Uma rodada de ajuste por vídeo está inclusa em todos os planos.</p></details>
+      <details><summary>Qual o prazo?</summary><p>Os vídeos são entregues em até 5 dias úteis depois da visita.</p></details>
+      <details><summary>Como é o pagamento e o contrato?</summary><p>Mensalidade paga até o dia 5 de cada mês, com contrato mínimo de 3 meses. Conteúdo de imóvel rende com constância.</p></details>
+      <details><summary>O que não usei no mês acumula?</summary><p>Não. As entregas valem para o mês e não passam para o seguinte.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="faixa final">
+  <div class="wrap">
+    <span class="mono">Vamos conversar</span>
+    <h2>Seu próximo imóvel em vídeo.</h2>
+    <div class="ctas">
+      <a class="btn" href="https://www.instagram.com/luwihmaker/" target="_blank" rel="noopener">Chamar no Instagram</a>
+      <a class="btn vazado" href="#monte">Montar meu pacote</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap"><span class="mono"><span class="dot"></span>luwihmaker</span><span class="mono">Alphaville · Barueri · SP</span></div>
+</footer>
+
+<script>
+(function () {
+  var brl = function (n) { return "R$ " + n.toLocaleString("pt-BR"); };
+
+  /* prédio sobe andar por andar (time-lapse); parado e completo se o usuário reduz movimento */
+  var predio = document.getElementById("predio"), N = 12, andares = [];
+  for (var i = 0; i < N; i++) {
+    var a = document.createElement("div"); a.className = "andar";
+    a.innerHTML = "<i></i><i></i><i></i><i></i><i></i>";
+    predio.appendChild(a); andares.push(a);
+  }
+  var tc = document.getElementById("tc");
+  function frame(n) {
+    andares.forEach(function (a, k) { a.classList.toggle("off", k >= n); });
+    var s = Math.round(n * 1.5), f = (n * 7) % 24;
+    tc.textContent = "00:00:" + String(s).padStart(2, "0") + ":" + String(f).padStart(2, "0");
+  }
+  frame(N);
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    var n = 0, pausa = 0;
+    setInterval(function () {
+      if (pausa > 0) { pausa--; return; }
+      n++;
+      if (n > N) { n = 0; pausa = 5; }
+      frame(n);
+      if (n === N) pausa = 12;
+    }, 420);
+  }
+
+  /* monte o seu */
+  var servicos = [
+    { id: "cap", nome: "Captação", op: [["Nenhum", 0, ""], ["Leve", 250, "1 hora"], ["Base", 400, "2 horas"], ["Pro", 700, "2 visitas"]] },
+    { id: "edi", nome: "Edição", op: [["Nenhum", 0, ""], ["Leve", 450, "2 vídeos"], ["Base", 800, "4 vídeos"], ["Pro", 1400, "8 vídeos"]] },
+    { id: "ia",  nome: "Vídeo com IA", op: [["Nenhum", 0, ""], ["Leve", 350, "1 vídeo"], ["Base", 600, "2 vídeos"], ["Pro", 1000, "4 vídeos"]] },
+    { id: "car", nome: "Carrossel agendado", op: [["Nenhum", 0, ""], ["Leve", 300, "4 por mês"], ["Base", 500, "8 por mês"], ["Pro", 700, "12 por mês"]] }
+  ];
+  var qtdIA = [0, 1, 2, 4];
+  var sel = { cap: 2, edi: 2, ia: 1, car: 1 };   /* abre montado como o plano Base */
+  var host = document.getElementById("linhas");
+  servicos.forEach(function (s) {
+    var lin = document.createElement("div"); lin.className = "lin";
+    lin.innerHTML = "<b>" + s.nome + "</b><div class='opcoes' data-s='" + s.id + "'></div>";
+    var box = lin.querySelector(".opcoes");
+    s.op.forEach(function (o, k) {
+      var b = document.createElement("button"); b.type = "button"; b.className = "op"; b.dataset.k = k;
+      b.innerHTML = o[0] + "<small>" + (k ? brl(o[1]) + " · " + o[2] : "R$ 0") + "</small>";
+      b.addEventListener("click", function () { sel[s.id] = k; draw(); });
+      box.appendChild(b);
+    });
+    host.appendChild(lin);
+  });
+  var hd = document.getElementById("hd");
+  hd.addEventListener("change", draw);
+  function draw() {
+    var total = 0, itens = [];
+    servicos.forEach(function (s) {
+      var k = sel[s.id], o = s.op[k];
+      document.querySelectorAll("[data-s='" + s.id + "'] .op").forEach(function (b) { b.setAttribute("aria-pressed", String(+b.dataset.k === k)); });
+      if (k) { total += o[1]; itens.push([s.nome + " · " + o[0], o[1]]); }
+    });
+    var extra = hd.checked ? 100 * qtdIA[sel.ia] : 0;
+    if (extra) { total += extra; itens.push(["IA em 1080p", extra]); }
+    document.getElementById("total").textContent = brl(total);
+    document.getElementById("itens").innerHTML = itens.length
+      ? itens.map(function (i) { return "<li><span>" + i[0] + "</span><span>" + brl(i[1]) + "</span></li>"; }).join("")
+      : "<li><span>Nenhum serviço escolhido</span><span></span></li>";
+    var dica = document.getElementById("dica");
+    if (!itens.length) dica.textContent = "Escolha ao menos um serviço.";
+    else if (total > 1000) dica.innerHTML = "No plano <b>Base</b> você leva captação, 4 vídeos, 1 vídeo com IA e 4 carrosséis por <b>R$ 1.000</b>.";
+    else dica.innerHTML = "Contrato mínimo de 3 meses. O <b>Base</b> reúne tudo por R$ 1.000, com primeiro mês a R$ 700.";
+  }
+  draw();
+
+  /* planos: mensalidade x primeiro mês */
+  function periodo(primeiro) {
+    document.getElementById("b-mes").setAttribute("aria-pressed", String(!primeiro));
+    document.getElementById("b-1").setAttribute("aria-pressed", String(primeiro));
+    document.querySelectorAll("[data-p]").forEach(function (e) { e.textContent = brl(+(primeiro ? e.dataset.p1 : e.dataset.p)); });
+  }
+  document.getElementById("b-mes").addEventListener("click", function () { periodo(false); });
+  document.getElementById("b-1").addEventListener("click", function () { periodo(true); });
+})();
+</script>
+</body></html>
